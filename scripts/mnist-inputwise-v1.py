@@ -13,7 +13,7 @@ import torchvision
 
 from sacred import Experiment
 from sacred.utils import apply_backspaces_and_linefeeds
-ex = Experiment("mnist-batch-noise-v1")
+ex = Experiment("mnist-perinput-noise-v1")
 ex.captured_out_filter = apply_backspaces_and_linefeeds
 
 class NoisyLinear(nn.Linear):
